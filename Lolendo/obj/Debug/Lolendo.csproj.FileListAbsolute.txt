@@ -1,0 +1,9 @@
+G:\ITA3\RPR\Lolendo\Lolendo\bin\Debug\Lolendo.exe.config
+G:\ITA3\RPR\Lolendo\Lolendo\bin\Debug\Lolendo.exe
+G:\ITA3\RPR\Lolendo\Lolendo\bin\Debug\Lolendo.pdb
+G:\ITA3\RPR\Lolendo\Lolendo\obj\Debug\Lolendo.csprojAssemblyReference.cache
+G:\ITA3\RPR\Lolendo\Lolendo\obj\Debug\Lolendo.Properties.Resources.resources
+G:\ITA3\RPR\Lolendo\Lolendo\obj\Debug\Lolendo.csproj.GenerateResource.cache
+G:\ITA3\RPR\Lolendo\Lolendo\obj\Debug\Lolendo.csproj.CoreCompileInputs.cache
+G:\ITA3\RPR\Lolendo\Lolendo\obj\Debug\Lolendo.exe
+G:\ITA3\RPR\Lolendo\Lolendo\obj\Debug\Lolendo.pdb

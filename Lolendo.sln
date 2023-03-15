@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lolendo", "Lolendo\Lolendo.csproj", "{47589140-9E83-4698-9957-88786B8C21BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "koleno32", "koleno32\koleno32.csproj", "{B470C97D-4AD6-47CE-BC8F-C64AB8238E5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47589140-9E83-4698-9957-88786B8C21BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47589140-9E83-4698-9957-88786B8C21BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47589140-9E83-4698-9957-88786B8C21BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47589140-9E83-4698-9957-88786B8C21BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B470C97D-4AD6-47CE-BC8F-C64AB8238E5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B470C97D-4AD6-47CE-BC8F-C64AB8238E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B470C97D-4AD6-47CE-BC8F-C64AB8238E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B470C97D-4AD6-47CE-BC8F-C64AB8238E5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F81C4DE3-E114-4983-A79E-50BBD746AEF4}
+	EndGlobalSection
+EndGlobal
