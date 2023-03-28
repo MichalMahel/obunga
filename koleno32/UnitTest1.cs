@@ -130,73 +130,82 @@ namespace koleno32
         [TestMethod]
         public void TestMethod12()
         {//dobře
-            Lolendo.Hrac a = Lolendo.Hrac; 
-            Lolendo.HRAC.PridejXP(10);
-            Assert.IsTrue(a.XP < Lolendo.HRAC.XP || Lolendo.HRAC.Level > a.Level);
+            Lolendo.Hrac a = Lolendo.Hrac;
+            Lolendo.Hrac b = a;
+            Lolendo.b.PridejXP(10);
+            Assert.IsTrue(a.XP < Lolendo.b.XP || Lolendo.b.Level > a.Level);
             
         }
         [TestMethod]
         public void TestMethod13()
         {//dobře
-            Lolendo.Hrac a = Lolendo.Hrac;
-            Lolendo.HRAC.PridejXP(11);
-            Assert.IsTrue(a.XP < Lolendo.HRAC.XP || Lolendo.HRAC.Level > a.Level);
 
+            Lolendo.Hrac a = Lolendo.Hrac;
+            Lolendo.Hrac b = a;
+            Lolendo.b.PridejXP(11);
+            Assert.IsTrue(a.XP < Lolendo.b.XP || Lolendo.b.Level > a.Level);
         }
         [TestMethod]
         public void TestMethod14()
         {//dobře
-            Lolendo.Hrac a = Lolendo.Hrac;
-            Lolendo.HRAC.PridejXP(12);
-            Assert.IsTrue(a.XP < Lolendo.HRAC.XP || Lolendo.HRAC.Level > a.Level);
 
+            Lolendo.Hrac a = Lolendo.Hrac;
+            Lolendo.Hrac b = a;
+            Lolendo.b.PridejXP(12);
+            Assert.IsTrue(a.XP < Lolendo.b.XP || Lolendo.b.Level > a.Level);
         }
         [TestMethod]
         public void TestMethod15()
         {//dobře
-            Lolendo.Hrac a = Lolendo.Hrac;
-            Lolendo.HRAC.PridejXP(13);
-            Assert.IsTrue(a.XP < Lolendo.HRAC.XP || Lolendo.HRAC.Level > a.Level);
 
+            Lolendo.Hrac a = Lolendo.Hrac;
+            Lolendo.Hrac b = a;
+            Lolendo.b.PridejXP(13);
+            Assert.IsTrue(a.XP < Lolendo.b.XP || Lolendo.b.Level > a.Level);
         }
         [TestMethod]
         public void TestMethod16()
         {//dobře
-            Lolendo.Hrac a = Lolendo.Hrac;
-            Lolendo.HRAC.PridejXP(14);
-            Assert.IsTrue(a.XP < Lolendo.HRAC.XP || Lolendo.HRAC.Level > a.Level);
 
+            Lolendo.Hrac a = Lolendo.Hrac;
+            Lolendo.Hrac b = a;
+            Lolendo.b.PridejXP(14);
+            Assert.IsTrue(a.XP < Lolendo.b.XP || Lolendo.b.Level > a.Level);
         }
         [TestMethod]
         public void TestMethod17()
         {//dobře
-            Lolendo.Hrac a = Lolendo.Hrac;
-            Lolendo.HRAC.PridejXP(9);
-            Assert.IsTrue(a.XP < Lolendo.HRAC.XP || Lolendo.HRAC.Level > a.Level);
 
+            Lolendo.Hrac a = Lolendo.Hrac;
+            Lolendo.Hrac b = a;
+            Lolendo.b.PridejXP(15);
+            Assert.IsTrue(a.XP < Lolendo.b.XP || Lolendo.b.Level > a.Level);
         }
         [TestMethod]
         public void TestMethod18()
         {//dobře
-            Lolendo.Hrac a = Lolendo.Hrac;
-            Lolendo.HRAC.PridejXP(3251);
-            Assert.IsTrue(a.XP < Lolendo.HRAC.XP || Lolendo.HRAC.Level > a.Level);
 
+            Lolendo.Hrac a = Lolendo.Hrac;
+            Lolendo.Hrac b = a;
+            Lolendo.b.PridejXP(16);
+            Assert.IsTrue(a.XP < Lolendo.b.XP || Lolendo.b.Level > a.Level);
         }
         [TestMethod]
         public void TestMethod19()
         {//dobře
-            Lolendo.Hrac a = Lolendo.Hrac;
-            Lolendo.HRAC.PridejXP(4);
-            Assert.IsTrue(a.XP < Lolendo.HRAC.XP || Lolendo.HRAC.Level > a.Level);
 
+            Lolendo.Hrac a = Lolendo.Hrac;
+            Lolendo.Hrac b = a;
+            Lolendo.b.PridejXP(17);
+            Assert.IsTrue(a.XP < Lolendo.b.XP || Lolendo.b.Level > a.Level);
         }
         [TestMethod]
         public void TestMethod20() //dobře
         {
             Lolendo.Hrac a = Lolendo.Hrac;
-            Lolendo.HRAC.PridejXP(0);
-            Assert.IsTrue(a.XP == Lolendo.HRAC.XP || Lolendo.HRAC.Level == a.Level);
+            Lolendo.Hrac b = a;
+            Lolendo.b.PridejXP(18);
+            Assert.IsTrue(a.XP < Lolendo.b.XP || Lolendo.b.Level > a.Level);
 
         }
     }
