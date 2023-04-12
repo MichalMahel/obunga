@@ -6,58 +6,63 @@ using System.Threading.Tasks;
 
 namespace Lolendo
 {
-    public class Hrac : HerniPostava
+    public class Hrac : Hernipostava
     {
-        private Oblicej Voblicej;
-        private Vlasy Flasy;
-        private BarvaVlasu BarvaFlasu;
-        public int XP = 0;
         public string Specializace;
-        
-        public Hrac(Oblicej Voblicej, Vlasy Flasy, BarvaVlasu BarvaFlasu, string specializace) : base("Jmeno")
+        private Oblicej OblicejA;
+        private Vlasy VlasyA;
+        private barvaVlasu BarvaVlasuA;
+        public int XP;
+        public Hrac(string Jmeno, string Specializace, Oblicej Ob, Vlasy Vl, barvaVlasu Ba) : base("Name")
         {
-            this.Voblicej = Voblicej;
-            this.Flasy = Flasy;
-            this.BarvaFlasu = BarvaFlasu;
+            base.Jmeno = Jmeno;
+            switch(Specializace)
+            {
+                case "Kouzelník":
+                case "Berserker:":
+                case "Inzenyr":
+                case "Cizak": this.Specializace = Specializace; break;
+                default: this.Specializace = "Kein"; break;
+            }
+            this.OblicejA = Ob;
+            this.VlasyA = Vl;
+            this.BarvaVlasuA = Ba;
             this.XP = 0;
-            if (specializace == "Kouzelník" || specializace == "Berserker" || specializace=="Inženýr" || specializace  == "Cizák")
-            {
-                this.Specializace = specializace;
-
-
-            }
-            else
-            {
-                this.Specializace = null;
-            }
-
         }
-        public void PridejXP(int a)
+        public void PridejXP(int added)
         {
-            this.XP += a;
-            while (XP >= (100*base.level)*XP)
+            this.XP += added;
+             while(this.XP > base.Level *100)
             {
-                XP -= level * 100;
-                level++;
+                this.XP -= (base.Level *100);
+                base.Level++;
             }
         }
         public override string ToString()
         {
-            return base.ToString() + Voblicej + Flasy + BarvaFlasu + XP.ToString() + Specializace;
+            string re = Jmeno + " " + X + " " + Y + " " + Level + " " + Specializace + " " + OblicejA + " " + VlasyA + " " + BarvaVlasuA + " " + XP;
+            return re;
         }
-
-
     }
-    public enum Oblicej { 
-    VelkyNos,Usoplesk,MakeUp
-    }
-    public enum Vlasy
+    public enum Oblicej
     {
-        Drdol,Culik,Pleska
+        velkyNos,
+        usoPlesk,
+        makeUp
     }
-    public enum BarvaVlasu
+    public enum Vlasy 
+    { 
+        drdol,
+        culik,
+        pleska
+    }
+    public enum barvaVlasu
     {
-        Kastanova,Blond,Brunet
+        cervena,
+        cerna,
+        hneda,
+        modra,
+        blond
     }
 
 }

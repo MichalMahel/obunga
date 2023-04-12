@@ -6,28 +6,31 @@ using System.Threading.Tasks;
 
 namespace Lolendo
 {
-    public abstract class HerniPostava
+    public abstract class Hernipostava
     {
-        public string jmeno;
-        protected int level;
-        public int x, y;
-        public HerniPostava(string jmeno)
+        public string Jmeno;
+        public int X, Y;
+        public int Level;
+        public Hernipostava(string jmeno)
         {
-            this.jmeno = jmeno;
+            this.Jmeno = jmeno;
+            if (Jmeno.Length > 10)
+            {
+                Jmeno = "null";
+            }
+            X = 0;
+            Y = 0;
+            Level = 1;
         }
-
-        public virtual void ZmenaPozice(int x1, int y1)
+        public virtual void ZmenaPozice(int x, int y)
         {
-            this.y = y1;
-            this.x = x1;
+            this.X = x;
+            this.Y = y;
         }
-
         public override string ToString()
         {
-            return "Jméno: " + jmeno.ToString() + "level: " + level.ToString() + "x: " + x.ToString() + "y: " + y.ToString();
+            string re = Jmeno + " " + X + " " + Y + " " +Level;
+            return re;
         }
-
-
-
     }
 }

@@ -6,37 +6,32 @@ using System.Threading.Tasks;
 
 namespace Lolendo
 {
-    public class NPC : HerniPostava
+    public class NPC : Hernipostava
     {
-        public Prace Dzob;
+        public NPCType Type;
         public int Sila;
         public bool Boss;
-
-
-        public NPC(Prace Arbaite, int Sila, bool Boss) : base("Jmeno")
+        public NPC(NPCType NT, int Sila) : base("Name")
         {
-            this.Dzob = Arbaite;
+            this.Type = NT;
             this.Sila = Sila;
-            this.Boss = Boss;
-
+            Boss = true;
         }
-        public NPC(Prace Arbaite) : base("Jmeno")
+        public NPC(NPCType NT) : base("Name")
         {
-            this.Dzob = Arbaite;
-            this.Boss = false;
+            this.Type = NT;
+            Boss = false;
         }
-        public override void ZmenaPozice(int x1, int y1)
+        public override void ZmenaPozice(int x, int y)
         {
-            base.ZmenaPozice(x1, y1);
+            base.X = x;
+            base.Y = y;
         }
-        public override string ToString()
+        public enum NPCType
         {
-            return base.ToString() + Dzob + Boss + Sila;
+            Obchodnik,
+            Nepritel,
+            Obyvatel
         }
-
-    }
-    public enum Prace
-    {
-        Obchonik, Nepritel, Obyvatel
     }
 }
